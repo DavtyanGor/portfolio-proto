@@ -1,0 +1,260 @@
+/* white mode*/
+  /* .primer{
+    background-color: #fff;
+  } */
+  /* .sekunder{
+    background-color: #eee;
+  } */
+  .tersier{
+    background-color: #eef;
+  }
+  .teks-primer{
+    color: #333;
+  }
+  .teks-sekunder{
+    color: #555;
+  }
+  .container{
+    width: 100%;
+    height: 100%;
+
+      transition: 1s;
+      -webkit-transition: 1s;
+      -moz-transition: 1s;
+      -ms-transition: 1s;
+      -o-transition: 1s;
+      position: absolute;
+}
+
+
+#check:checked ~ .sekunder, #check:checked ~ .sekunder main, #check:checked ~ .sekunder footer{
+    background-color: #e8dfec;
+}
+#check:checked ~ .sekunder .header__logo a{
+    color: burlywood;
+}
+#check:checked ~ .sekunder .header__navigation-item a{
+    color: #151414;
+}
+#check:checked ~ .sekunder .header__navigation-item a:hover{
+    color: goldenrod;
+}
+#check:checked ~ .sekunder .header__navigation-item .active-item{
+    color: goldenrod;
+}
+#check:checked ~ .sekunder hr{
+    background-color: #151414;
+}
+#check:checked ~ .sekunder .header__logo{
+    border: 2px solid #151414;
+    color: #151414;
+    /* background-color: bisque; */
+    background-color: #151414;
+}
+#check:checked ~ .sekunder .header__logo .wave::before{
+    background-color: #e8dfec;
+}
+#check:checked ~ .sekunder .header__logo .wave::after{
+    /* background-color: rgb(227, 204, 175); */
+    background-color: #222020;
+}
+#check:checked ~ .sekunder .section1_txt-first{
+    color: #151414;
+}
+#check:checked ~ .sekunder .section1_txt-first span{
+    color: burlywood;
+}
+#check:checked ~ .sekunder h2, #check:checked ~ .sekunder h2 span{
+    color: #151414;
+}
+#check:checked ~ .sekunder .fullname{
+    color: burlywood;
+}
+#check:checked ~ .sekunder .section1 .dynamic-txts span{
+    color: burlywood;
+}
+#check:checked ~ .sekunder .section1 .dynamic-txts span::after{
+    background-color: #e8dfec;
+    border-left: 2px solid #151414;
+}
+#check:checked ~ .sekunder .profession{
+    color: lightslategray;
+}
+#check:checked ~ .sekunder h3{
+    color: darkgoldenrod;
+}
+#check:checked ~ .sekunder h3 span:hover{
+    color: goldenrod;
+}
+#check:checked ~ .sekunder h3 span::after{
+    background-color: #151414;
+}
+#check:checked ~ .sekunder .download-button:hover{
+    background-color: #151414;
+    color: #fff;
+}
+#check:checked ~ .sekunder .download-button{
+    background-color: darkgoldenrod;
+}
+#check:checked ~ .sekunder .language:hover{
+    border: 2px solid #151414;
+}
+#check:checked ~ .sekunder .about-button a, #check:checked ~ .sekunder .back a{
+    color: #fff ;
+    background-color: #151414;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+#check:checked ~ .sekunder .header__navigation-link .active-span, #check:checked ~ .sekunder .header__navigation-link .active-span2, #check:checked ~ .sekunder .header__navigation-link .active-span3, #check:checked ~ .sekunder .header__navigation-link .active-span4, #check:checked ~ .sekunder .header__navigation-link:hover span{
+    background: linear-gradient(transparent, #151414);
+}
+#check:checked ~ .sekunder .menu__btn > span, #check:checked ~ .sekunder .menu__btn > span::after, #check:checked ~ .sekunder .menu__btn > span::before{
+    background-color: #151414;
+}
+#check:checked ~ .sekunder .menu__box{
+    background-color: burlywood;
+}
+#check:checked ~ .sekunder .switch{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.switch{
+    display: block;
+    cursor: pointer;
+    z-index: 2;
+    position: fixed;
+    background: #151414;
+    height: 50px;
+    border-color: goldenrod;
+    border-style: solid;
+    width: 27px;
+    border-width: 2px 25px 2px 2px;
+    border-radius: 50%;
+    animation: roll 1s;
+    -webkit-animation: roll 1s;
+    bottom: 40px;
+    right: 40px;
+    box-sizing: content-box;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.switch:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background: #151414;
+    border: 9px solid goldenrod;
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+  }
+  .switch:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: goldenrod;
+    border: 9px solid #151414;
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+  }
+  .switch-container{
+      position:relative;
+  }
+#check{
+      display: none !important;
+}
+#check:checked ~ .sekunder .section4 h4{
+    color: burlywood;
+}
+#check:checked ~ .sekunder .section4 strong{
+    color: #151414;
+}
+#check:checked ~ .sekunder .section2 h2{
+    color: burlywood;
+}
+#check:checked ~ .sekunder .section2 p{
+    color: #151414;
+}
+#check:checked ~ .sekunder .section2 input, #check:checked ~ .sekunder .section2 textarea{
+    background-color: #151414;
+}
+#check:checked ~ .sekunder .section2 .focus-border{
+    background-color: burlywood;
+    height: 3px;
+}
+#check:checked ~ .sekunder .section2 .email:invalid ~ .focus-border{
+    background-color: red;
+}
+#check:checked ~ .sekunder .section2 .send__contain .button__send{
+    color: #151414;
+    border-color: burlywood;
+}
+#check:checked ~ .sekunder .section2 .send__contain .button__send:hover{
+    box-shadow: inset 240px 0 0 burlywood;
+    color: #fff;
+}
+#check:checked ~ .sekunder .section3 h2{
+    color: rgba(223, 187, 140, 0.2);
+}
+#check:checked ~ .sekunder .section3 h3{
+    color: burlywood;
+}
+#check:checked ~ .sekunder .section3 p{
+    color: #e8dfec;
+}
+#check:checked ~ .sekunder .section3 a{
+    color: burlywood;
+    border-color: burlywood;
+}
+#check:checked ~ .sekunder .section3 a:hover{
+    color: #151414;
+    background-color: bisque;
+}
+#check:checked ~ .sekunder .section6 .faq-text p{
+    color: #151414;
+}
+#check:checked ~ .sekunder .section6 .faq-text .fa-js{
+    color: orange;
+}
+#check:checked ~ .sekunder .section6 .faq-text .fa-less{
+    color: #151414;
+}
+#check:checked ~ .sekunder .section1 .my__links{
+    background-color: burlywood;
+}
+#check:checked ~ .sekunder .section1 .my__links a{
+    color: #e8dfec;
+}
+#check:checked ~ .sekunder .section1 .my__links-600 a{
+    color: burlywood;
+}
+
+
+@media screen and (min-width: 769px){
+    #check:checked ~ .sekunder .menu__box{
+        background: transparent;
+    }
+}
+@media screen and (max-width: 768px){
+    .switch{
+        border-color: #fff;
+    }
+    .switch::after{
+        background-color: #fff;
+    }
+    .switch::before{
+        border-color: #fff;
+    }
+}

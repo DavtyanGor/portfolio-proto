@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="syles/products-details.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="shortcut icon" href="img/steam_galaxy_icon_by_eywenn-d99gr81.png">
+    <title>Games Key - Steam Sport</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="img/Steam Logo.png" alt="logo" width="125px">
+        </div>
+        <nav class="nav">
+            <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Games.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+      <a href="addfav.html"><img src="img/img_237811.png" width="30px" height="30px"></a>
+        <img src="img/menu.png" class="menu-icon" 
+        onclick="menutoggle()">
+    </div>
+    </div>
+
+<!--add favorite-->
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="img/Hitman-Codename-47-Region-Free-PC-KEY-Steam.png">
+                <div>
+                    <p>Codename 47</p>
+                    <small>Price: $5.99</small>
+                    <br>
+                    <a class="rem" href="#">Remove</a>
+                </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$00.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="img/220px-Red_Dead_Redemption_II.jpg">
+                <div>
+                    <p>Red Dead Redemption 2</p>
+                    <small>Price: $22.44</small>
+                    <br>
+                    <a class="rem" href="#">Remove</a>
+                </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$00.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="img/wolfenstein-ii-09-13-17-1.jpg">
+                <div>
+                    <p>Wolfenstein II New Colossus</p>
+                    <small>Price: $6.25</small>
+                    <br>
+                    <a class="rem" href="#">Remove</a>
+                </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$00.00</td>
+        </tr>
+    </table>
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>$00.00</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>3%</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>$00.00</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+<!--footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone</p>
+                <div class="app-logo">
+                    <img src="img/play-store.png">
+                    <img src="img/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="img/Steam Logo.png">
+                <p>Our Purpose Is To Susantibly Make the Pleasure <br> and Benefits of Games Accessible to the Many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Cupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&copy; Copyright 2021 - Davtyan Gor<p>
+    </div>
+</div>
+<!---- featured categories ---->
+
+
+
+
+<!--js for toggle menu-->
+ <script>
+     var MenuItems = document.getElementById("MenuItems");
+
+     MenuItems.style.maxHeight = "0px";
+
+     function menutoggle() {
+         if( MenuItems.style.maxHeight == "0px"){
+            MenuItems.style.maxHeight = "200px";
+         } else{
+            MenuItems.style.maxHeight = "0px";
+         }
+     };
+     var rem = document.getElementsByClassName("rem");
+        for(var i = 0; i < rem.length; i++){
+            rem[i].addEventListener("click", function(){
+                this.parentElement.parentElement.parentElement.remove();
+            });
+        }
+ </script>
+ 
+</body>
+</html>

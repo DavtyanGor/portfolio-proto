@@ -1,0 +1,1 @@
+$user = isset($_POST)

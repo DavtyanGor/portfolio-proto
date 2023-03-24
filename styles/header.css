@@ -1,0 +1,370 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap'); */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 20px 0;
+}
+.header__logo {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 2px solid #fff;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    background-color: darkgoldenrod;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.header__logo h1 a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 50px;
+    position: relative;
+    z-index: 2;
+    user-select: none;
+}
+.wave{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 1.5s ease-in-out .4s;
+    -webkit-transition: 1.5s ease-in-out .4s;
+    -moz-transition: 1.5s ease-in-out .4s;
+    -ms-transition: 1.5s ease-in-out .4s;
+    -o-transition: 1.5s ease-in-out .4s;
+}
+.wave::after{
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: -10px;
+    width: 125%;
+    height: 125%;
+    background-color: rgb(167, 122, 11);
+    border-radius: 48%;
+    -webkit-border-radius: 48%;
+    -moz-border-radius: 48%;
+    -ms-border-radius: 48%;
+    -o-border-radius: 48%;
+    animation: wave 8s ease-in infinite;
+    -webkit-animation: wave 8s ease-in infinite;
+}
+.wave::before{
+    content: '';
+    position: absolute;
+    top: -35px;
+    left: -10px;
+    width: 135%;
+    height: 125%;
+    background-color: #151414;
+    z-index: 1;
+    animation: wave 4s ease-in infinite;
+    -webkit-animation: wave 4s ease-in infinite;
+    border-radius: 48%;
+    -webkit-border-radius: 48%;
+    -moz-border-radius: 48%;
+    -ms-border-radius: 48%;
+    -o-border-radius: 48%;
+}
+.header__logo:hover .wave{
+    top: -55px;
+    transition: 1.5s ease-in-out .6s;
+    -webkit-transition: 1.5s ease-in-out .6s;
+    -moz-transition: 1.5s ease-in-out .6s;
+    -ms-transition: 1.5s ease-in-out .6s;
+    -o-transition: 1.5s ease-in-out .6s;
+}
+
+@keyframes wave{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* .header__navigation {
+} */
+.header__navigation-list {
+    display: flex;
+}
+.header__navigation-item {
+    list-style: none;
+}
+.header__navigation-link{
+    font-weight: 100;
+    font-size: calc(0.60em + 1vw);
+    letter-spacing: 1.5px;
+}
+.header__navigation-link span {
+    display: block;
+    position: absolute;
+}
+.header__navigation-link:hover span:nth-child(1){
+    top: 0px;
+    height: 2px;
+    width: 100%;
+    animation: neon 1s ease-in infinite;
+    -webkit-animation: neon 1s ease-in infinite;
+    background: linear-gradient(90deg, transparent, #fff);
+    left: -100%;
+}
+.header__navigation-link:hover span:nth-child(2){
+    top: -100%;
+    height: 100%;
+    width: 2px;
+    animation: neon2 1s ease-in infinite .4s;
+    -webkit-animation: neon2 1s ease-in infinite .4s;
+    background: linear-gradient(180deg, transparent, #fff);
+    right: 2px;
+}
+.header__navigation-link:hover span:nth-child(3){
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    animation: neon3 1s ease-in infinite .8s;
+    -webkit-animation: neon3 1s ease-in infinite .8s;
+    background: linear-gradient(270deg, transparent, #fff);
+    right: -100%;
+}
+.header__navigation-link:hover span:nth-child(4){
+    bottom: -100%;
+    height: 100%;
+    width: 2px;
+    animation: neon4 1s ease-in infinite 1.2s;
+    -webkit-animation: neon4 1s ease-in infinite 1.2s;
+    background: linear-gradient(360deg, transparent, #fff);
+    left: 2px;
+}
+.header__navigation-link .active-span{
+    top: 0px;
+    height: 2px;
+    width: 100%;
+    animation: neon 1s ease-in infinite;
+    -webkit-animation: neon 1s ease-in infinite;
+    background: linear-gradient(90deg, transparent, gold);
+    left: -100%;
+}
+.header__navigation-link .active-span2{
+    top: -100%;
+    height: 100%;
+    width: 2px;
+    animation: neon2 1s ease-in infinite .4s;
+    -webkit-animation: neon2 1s ease-in infinite .4s;
+    background: linear-gradient(180deg, transparent, gold);
+    right: 2px;
+}
+.header__navigation-link .active-span3{
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    animation: neon3 1s ease-in infinite .8s;
+    -webkit-animation: neon3 1s ease-in infinite .8s;
+    background: linear-gradient(270deg, transparent, gold);
+    right: -100%;
+}
+.header__navigation-link .active-span4{
+    bottom: -100%;
+    height: 100%;
+    width: 2px;
+    animation: neon4 1s ease-in infinite 1.2s;
+    -webkit-animation: neon4 1s ease-in infinite 1.2s;
+    background: linear-gradient(360deg, transparent, gold);
+    left: 2px;
+}
+@keyframes neon{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+@keyframes neon2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+@keyframes neon3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+@keyframes neon4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+.header__navigation-link {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    margin: 0 5px;
+    /*border: 2px solid #fff;
+    */position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: .6s ease-in-out;
+    -webkit-transition: .6s ease-in-out;
+    -moz-transition: .6s ease-in-out;
+    -ms-transition: .6s ease-in-out;
+    -o-transition: .6s ease-in-out;
+}
+.header__navigation-link:hover {
+    color: goldenrod;
+}
+.active-item{
+    color: goldenrod;
+}
+#menu__toggle{
+    display: none;
+}
+/* media mobile */
+@media screen and (max-width: 768px) {
+    .header__navigation-list{
+        display: none;
+    }
+
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    width: 46px;
+    height: 36px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    transition: 0.3s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -18px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 18px;
+  }
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 100px 0;
+    list-style: none;
+    text-align: center;
+    background-color: goldenrod;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    transition: 0.3s;
+    z-index: 1;
+  }
+  .header__navigation-link{
+      color: #fff;
+        padding: 5px 20px;
+        margin: 10px 0;
+}
+.active-item{
+    color: #000;
+}
+  .header__navigation-link:hover{
+    color: #000;
+  }
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    right: 0;
+  }
+
+  .header__navigation-link .active-span{
+    top: 0px;
+    height: 2px;
+    width: 100%;
+    animation: neon 1s ease-in infinite;
+    -webkit-animation: neon 1s ease-in infinite;
+    background: linear-gradient(90deg, transparent, #000);
+    left: -100%;
+}
+.header__navigation-link .active-span2{
+    top: -100%;
+    height: 100%;
+    width: 2px;
+    animation: neon2 1s ease-in infinite .4s;
+    -webkit-animation: neon2 1s ease-in infinite .4s;
+    background: linear-gradient(180deg, transparent, #000);
+    right: 2px;
+}
+.header__navigation-link .active-span3{
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    animation: neon3 1s ease-in infinite .8s;
+    -webkit-animation: neon3 1s ease-in infinite .8s;
+    background: linear-gradient(270deg, transparent, #000);
+    right: -100%;
+}
+.header__navigation-link .active-span4{
+    bottom: -100%;
+    height: 100%;
+    width: 2px;
+    animation: neon4 1s ease-in infinite 1.2s;
+    -webkit-animation: neon4 1s ease-in infinite 1.2s;
+    background: linear-gradient(360deg, transparent, #000);
+    left: 2px;
+}
+  
+}
